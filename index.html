@@ -4,22 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estyles.css">
 </head>
 <body>
-    <form id="miFormulario">
-        <label for="p">p:</label>
-        <input type="number" id="p" name="p" required><br><br>
+
+    <header class="header">
+        <div class="header_texto">
+            <h1 class="contenedor centrar-texto">Actividad Segundo Periodo</h1>
+        </div>
+
+    </header>
+
+    <main class="main">
         
-        <label for="k">k:</label>
-        <input type="number" id="k" name="k" required><br><br>
+        <div class="contenedor">
+            <div class="datos">
+                <img class="imagen_ipn izquierda" src="images/ipn.jpeg" alt="Logo ipn">
+                <img class="imagen_escom derecha" src="images/escom.png" alt="Logo escom">
+                <div class="contenido centrar-texto">
+                    <h3>INSTITUTO POLTÉCNICO NACIONAL</h3>
+                    <h4>Escuela Superior de Cómputo</h4>
+                    <p>Probabilidad y estadistica</p>
+                    <p>Profesora: Elena Fabiola Ruíz Ledesma</p>
+                    <p>Integrantes</p>
+                    <p>Miguel Ángel Vázquez Cisneros</p>
+                    <p>Enrique Taboada Montiel</p>
+                    <p>Grupo: 4CM5</p>
+                    <br>
+                    <p></p>
+                </div>
+                
+            </div>
+            <div class="problema">
+                <p class="descripcion">La probabilidad de que una persona dada crea un rumor acerca de las transgreciones de cierta actriz famosa es <input type="number" id="p" name="p" class="input" required><br><br> . ¿Cuál es la probablidad de que la <input type="number" id="x" name="x" class="input" required><br><br> sea la <input type="number" id="k" name="k" class="input" required><br><br> en creerlo?</p>
+
+                <img class="rumores" src="images/rumor.jpeg" alt="rumores">
+            </div>
+
+            <button type="button" id="botonCalcular" class="boton">Calcular probabilidad</button>
+        </div>
         
-        <label for="x">x:</label>
-        <input type="number" id="x" name="x" required><br><br>
+        <div class="contenedor">
+            <p>La probabilidad es de: </p>
+            <span class="resultado" id="resultado">0</span>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer_texto">
+                <h3>Autores</h3>
+                <ul>Miguel Ángel Vázquez Cisneros</ul>
+                <ul>Enrique Taboada Montiel</ul>
+            </div>
+        </div>
         
-        <button type="button" id="botonCalcular">Realizar Operación</button>
-    </form>
-    
-    <p>El resultado de la operación es: <span id="resultado"></span></p>
+    </footer>
     
     <script src="js/logic.js"></script>
 </body>

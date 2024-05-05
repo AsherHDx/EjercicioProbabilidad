@@ -8,12 +8,13 @@ function realizarOperacion() {
     var k = parseFloat(document.getElementById("k").value);
     var x = parseFloat(document.getElementById("x").value);
     var q = 1-p;
+
+    const respuesta = document.getElementById("resultado");
     
     // Realizar la operación b*(x,k,p)
     var resultado = (combinacion(x-1,k-1))*(Math.pow(p,k))*(Math.pow(q,x-k));
-    
-    // Mostrar el resultado en el HTML
-    document.getElementById("resultado").textContent = resultado;
+
+    respuesta.textContent = resultado;
 }
 
 
